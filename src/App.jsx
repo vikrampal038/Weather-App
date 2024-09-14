@@ -32,8 +32,8 @@ function App() {
 
   return (
     <>
-      <div className="bg-[#1f213A] h-screen flex justify-center items-start">
-        <div className="leftContainer mt-40  w-1/5 h-1/3 ">
+      <div className="bg-[#1f213A] md:h-screen flex justify-center items-start  sm:flex flex-col md:flex-row">
+        <div className="leftContainer sm: mt-16 md:mt-16 sm: ml-7 md:ml-7 lg:mt-40 lg:ml-0 lg:w-1/5 lg:h-1/3  sm:justify-center items-center">
         {weatherData && (
           <Temperature
         setCity={setCity}
@@ -47,9 +47,8 @@ function App() {
         />
         )}
         </div>
-        <div className="rightContainer mt-32  w-1/3 h-1/3 p-10 grid grid-col-2 gap-6">
+        <div className="rightContainer lg:mt-32  md:mt-28  w-1/3 h-1/3 p-10 grid grid-col-2 gap-6">
         <h1 className='heading_div text-slate-200 text-3xl mb-2 font-bold col-span-2'>Today's Highlights.</h1>
-        
         {
           weatherData && (
             <>
